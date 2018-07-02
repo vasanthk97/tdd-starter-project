@@ -4,12 +4,13 @@
 
 * JDK >= 1.8 
 
-Any Modern IDE - Intellij preferred.
+* Any Modern IDE - Intellij preferred.
 
 * Maven : 
-To install maven 
 
-```sudo apt install maven```
+    To install maven 
+
+  ```sudo apt install maven```
 
 ### Running the project:
 
