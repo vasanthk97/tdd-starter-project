@@ -1,30 +1,33 @@
 # tdd-starter-project
 
-###Prerequisites
+### Prerequisites
 
-JDK >= 1.8 
+* JDK >= 1.8 
 
 Any Modern IDE - Intellij preferred.
 
-Maven : 
+* Maven : 
 To install maven 
 
-sudo apt install maven
+```sudo apt install maven```
 
-#Running the project:
+### Running the project:
 
-Clone this repository git clone https://github.com/balraj99/tdd-starter-project.git
+Clone this repository : 
 
-cd tdd-starter-project
+```git clone https://github.com/balraj99/tdd-starter-project.git```
 
-mvn clean install
+```cd tdd-starter-project```
+
+```mvn clean install```
 
 You should see the Build being successful.
 
-mvn test
+```mvn test```
 
 You should see 
 
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+Tests run: 
+1, Failures: 0, Errors: 0, Skipped: 0
 
 with Build Success message
