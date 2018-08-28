@@ -2,6 +2,7 @@ package com.tdd;
 
 abstract public class Money {
     protected int amount;
+    protected String currency;
 
     public Money() {
     }
@@ -17,11 +18,13 @@ abstract public class Money {
 
         return this.amount == money.amount && getClass().equals(money.getClass());
     }
-
+    public String getCurrency(){
+        return this.currency;
+    }
     public static Money getDollar(int amount){
-        return new Dollar(amount);
+        return new Dollar(amount,"USD");
     }
     public static Money getFranc(int amount){
-        return new Franc(amount);
+        return new Franc(amount,"CHF");
     }
 }
