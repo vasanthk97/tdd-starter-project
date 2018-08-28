@@ -1,17 +1,17 @@
 package com.tdd;
 
-abstract public class Money {
+public class Money {
     protected int amount;
     protected String currency;
 
     public Money() {
     }
 
-    public Money(int amount) {
+    public Money(int amount, String currency) {
         this.amount = amount;
+        this.currency = currency;
     }
 
-    public abstract Money times(int amount);
 
     public boolean equals(Object obj){
         Money money= (Money) obj;
@@ -26,5 +26,14 @@ abstract public class Money {
     }
     public static Money getFranc(int amount){
         return new Franc(amount,"CHF");
+    }
+
+    public Money times(int multiplier){
+        return new Money(amount*multiplier,currency);
+    }
+
+    @Override
+    public String toString() {
+        return amount + " " + currency;
     }
 }
