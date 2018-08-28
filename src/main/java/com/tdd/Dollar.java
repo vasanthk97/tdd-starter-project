@@ -7,8 +7,15 @@ public class Dollar {
         this.amount = amount;
     }
 
-    public void times(int number){
-        this.amount *= number;
+    public Dollar times(int number){
+        return new Dollar(this.amount*number);
+
+    }
+
+    public boolean equals(Object obj){
+        Dollar dollar = (Dollar)obj;
+
+        return this.amount == dollar.amount;
     }
 
 }
